@@ -3,7 +3,7 @@ Dashboard
 
 The Dashboard is the main landing page. By default it lists your mapped models,
 as defined by your ``Admin`` services. This is useful to help you start using
-``SonataAdminBundle`` right away, but there's much more that you can do to take
+``SonataAdminBundle`` right away, but there is much more that you can do to take
 advantage of the Dashboard.
 
 The Dashboard is, by default, available at ``/admin/dashboard``, which is handled by
@@ -117,7 +117,7 @@ service belongs to the ``Content`` group.
                     - Acme\DemoBundle\Entity\Post
                     - ~
 
-In this example, the labels are translated by ``SonataAdminBundle``, using the given
+In this example, the labels are translated by ``AcmeDemoBundle``, using the given
 ``label_catalogue``. So, you can use the above examples to support multiple languages
 in your project.
 

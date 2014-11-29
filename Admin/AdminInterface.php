@@ -828,6 +828,26 @@ interface AdminInterface
     public function setFormGroups(array $formGroups);
 
     /**
+     * {@inheritdoc}
+     */
+    public function getFormTabs();
+
+    /**
+     * {@inheritdoc}
+     */
+    public function setFormTabs(array $formTabs);
+
+    /**
+     * {@inheritdoc}
+     */
+    public function getShowTabs();
+
+    /**
+     * {@inheritdoc}
+     */
+    public function setShowTabs(array $showTabs);
+
+    /**
      * Remove a form group field
      *
      * @param $key
@@ -1004,4 +1024,21 @@ interface AdminInterface
      * @return Metadata
      */
     public function getObjectMetadata($object);
+
+    /**
+     * @return array
+     */
+    public function getListModes();
+
+    /**
+     * @param string $mode
+     */
+    public function setListMode($mode);
+
+    /**
+     * return the list mode
+     *
+     * @return string
+     */
+    public function getListMode();
 }

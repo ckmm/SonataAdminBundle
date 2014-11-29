@@ -34,7 +34,7 @@ and is compatible with Doctrine ORM, Doctrine ODM and Propel. See
 `FOSUserBundle on GitHub 
 <https://github.com/FriendsOfSymfony/FOSUserBundle/>`_ for more information.
 
-The user management system requires to perform specific call when the user
+The user management system requires to perform specific calls when the user
 password or username are updated. This is how the Admin bundle can be used to
 solve the issue by using the ``preUpdate`` saving hook.
 
@@ -103,6 +103,6 @@ The service declaration where the ``UserManager`` is injected into the Admin cla
             <argument />
 
             <call method="setUserManager">
-                <argument type='service' id='fos_user.user_manager' />
+                <argument type="service" id="fos_user.user_manager" />
             </call>
         </service>
